@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Battista</title>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/img/logo.png">
+</head>
+<body>
+    <!-- header start -->
+    <header id="header">
+        <h1>Andrea Battista</h1>
+
+        <nav id="navbar"> 
+            <!-- home -->
+            <a href="" class="section_link">
+                <div class="link_container">
+                    <span class="material-symbols-outlined">home</span>
+                    <h3>Home</h3>
+                </div>
+            </a>
+
+            <!-- about -->
+            <a href="#about" class="section_link">
+                <div class="link_container">
+                    <span class="material-symbols-outlined">person</span>
+                    <h3>About me</h3>
+                </div>
+            </a>
+
+            <!-- projects -->
+            <a href="#projects" class="section_link">
+                <div class="link_container">
+                    <span class="material-symbols-outlined">code</span>
+                    <h3>Projects</h3>
+                </div>
+            </a>
+
+            <!-- contacts -->
+            <a href="#contacts" class="section_link">
+                <div class="link_container">
+                    <span class="material-symbols-outlined">contact_page</span>
+                    <h3>Contact me</h3>
+                </div>
+            </a>
+        </nav>
+
+        <div id="toggle">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <div id="home">
+            <img src="/assets/img/logo.png" alt="">
+            <span class="scroll-btn">
+                <a href="#">
+                    <span class="mouse">
+                        <span>
+                        </span>
+                    </span>
+                </a>
+            </span>
+        </div>
+
+        <div id="about">
+            <div id="about__text">
+                <h1>ABOUT ME</h1>
+                Hi, I am Andrea Battista! <br>
+                I recently graduated from high school.  I have a strong passion for IT. Proficient in hardware and software troubleshooting, software installation/configuration and creating minimal and dynamic websites. Excellent problem solving and communication skills. <br>
+                The last few years I have tried to learn the basics of website development through video courses and online tutorials.
+                <div id="about__buttons">
+                    <a href="assets/Andrea_Battista_CV.pdf" download id="cv">Download CV</a>
+                    <a href="#projects">See projects</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h1 class="section_title">MY PROJECTS</h1>
+            <div id="prj__container">
+                <a href="https://freeforexsignals.it/" target="_blank">
+                    <div class="project">
+                        <img src="assets/img/logoffs.jpg" alt="">
+                        <h3 id="text">FreeForexSignals</h3>
+                    </div>
+                </a>
+
+                <a href="https://freeforexsignals.it/" target="_blank">
+                    <div class="project">
+                        <img src="assets/img/download.png" alt="">
+                        <h3 id="text">Sistema di controllo piscina</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="contacts">
+            <h1 class="section_title">STAY IN CONTACT WITH ME</h1>
+            <div class="mail__form">
+                <h2>SEND ME AN EMAIL</h2>
+                <form method="post" netlify>
+                    <input type="text" name="name" placeholder="Your name" ="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="You message here"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="social__link__container">
+                <a href="https://github.com/andreabatti" target="_blank" class="social__link"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/battista-andrea/"  target="_blank" class="social__link"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://www.instagram.com/bullbatti/"  target="_blank" class="social__link"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
