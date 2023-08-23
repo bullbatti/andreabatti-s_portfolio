@@ -34,6 +34,11 @@ header {
     background-color: var(--white);
 }
 
+#header__title {
+    text-decoration: none;
+    color: var(--black);
+}
+
 header h1 {
     font-size: 24;
     font-weight: 900;
@@ -247,10 +252,12 @@ nav a {
     background-color: var(--blue);
     text-decoration: none;
     color: var(--white);
+    transition: .7s;
 }
 
 #about__buttons #cv {
     background-color: var(--gray);
+    transition: .7s;
 }
 
 
@@ -407,6 +414,16 @@ button {
 
 
 
+@media not (hover: none) {
+    #header__title:hover, header a:hover {
+        color: var(--blue);
+    }
+
+    #about__buttons a:hover {
+        transform: scale(1.1);
+        transition: .7s;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
