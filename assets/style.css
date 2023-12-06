@@ -254,7 +254,32 @@ nav a {
     border-radius: 15px;
 }
 
+/*************
+* ANIMATIONS *
+*************/
+#journey.hidden, #work.hidden, #skills.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(100%);
+}
 
+#journey.show, #work.show, #skills.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+#introduction.hidden, #values.hidden, #tech.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(100%);
+}
+
+#introduction.show, #values.show, #tech.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
 
 
 #about__buttons {
